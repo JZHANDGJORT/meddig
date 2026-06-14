@@ -44,7 +44,7 @@ let subtitleText;
 
 if (deviceId.startsWith("lugnsten")) {
     activeQuotes = calmQuotes;
-    subtitleText = "🌿 Lugnsten · Några lugna ord att vila i";
+    subtitleText = "Lugnsten · En liten trygghet i fickan";
 } else {
     activeQuotes = wisdomQuotes;
     subtitleText = "Lyckokaka · En tanke att bära med sig";
