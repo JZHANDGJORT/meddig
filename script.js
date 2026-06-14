@@ -18,7 +18,7 @@ function getTimeOfDay() {
 
 
 // ===============================
-// 🥠 LYCKOKAKA (perspektiv)
+// 🥠 LYCKOKAKA (daglig stabilitet)
 // ===============================
 const wisdomQuotes = [
     "Varje liten handling formar framtiden.",
@@ -37,19 +37,18 @@ const wisdomQuotes = [
 
 
 // ===============================
-// 🪨 LUGNSTEN (sorterad i känslotyper)
+// 🪨 LUGNSTEN (känslosystem per skanning)
 // ===============================
 
-// 🌿 CALM / CALL (mjuk riktning, start, närvaro)
+// 🌿 call (start / närvaro)
 const calmCallQuotes = [
     "En ny dag. Du behöver inte ha bråttom in i den.",
     "Börja mjukt.",
     "Det räcker att ta första steget.",
-    "Du behöver inte lösa hela dagen nu.",
     "Du får vara här utan att göra något mer."
 ];
 
-// 🤝 SOCIAL (prestationsoro, relationer, obekvämhet)
+// 🤝 social (prestationsoro / obekvämhet)
 const calmSocialQuotes = [
     "Du behöver inte prestera här.",
     "Du får ta det i din egen takt.",
@@ -58,34 +57,33 @@ const calmSocialQuotes = [
     "Du behöver inte vara på ett visst sätt."
 ];
 
-// 🪨 RESET (kväll, nedvarvning, släppa dagen)
+// 🪨 reset (kväll / släppa dagen)
 const calmResetQuotes = [
     "Dagen är redan tillräcklig.",
     "Du behöver inte lösa något mer idag.",
     "Låt det som varit få vila nu.",
     "Du får släppa taget om resten.",
-    "Du är klar för idag, även om allt inte blev klart.",
-    "Det räcker att dagen får vara som den var."
+    "Det räcker att dagen får vara som den var.",
+    "Du är klar för idag."
 ];
 
 
 // ===============================
-// 📊 RELATION (Lugnsten)
+// 📊 LUGNSTEN – ingen “dag-cache”, bara session-minne
 // ===============================
-function getVisitCount() {
-    const key = `${deviceId}-visits`;
-    let count = localStorage.getItem(key);
+let lastLullQuote = null;
 
-    count = count ? parseInt(count) : 0;
-    count++;
 
-    localStorage.setItem(key, count);
-    return count;
+// ===============================
+// 🔗 HELPERS
+// ===============================
+function randomQuote(list) {
+    return list[Math.floor(Math.random() * list.length)];
 }
 
 
 // ===============================
-// 🎯 VÄLJ AKTIVT INNEHÅLL
+// 🎯 VÄLJ INNEHÅLL
 // ===============================
 let activeQuotes = [];
 let subtitleText = "";
@@ -94,9 +92,7 @@ let subtitleText = "";
 if (deviceId.startsWith("lugnsten")) {
 
     const timeOfDay = getTimeOfDay();
-    const visitCount = getVisitCount();
 
-    // välj “känslotyp”
     if (timeOfDay === "morning") {
         activeQuotes = calmCallQuotes;
     } else if (timeOfDay === "evening") {
@@ -105,7 +101,6 @@ if (deviceId.startsWith("lugnsten")) {
         activeQuotes = calmSocialQuotes;
     }
 
-    // stabil identitet (ingen “relationstext” längre)
     subtitleText = "En liten trygghet i fickan";
 
 } else {
@@ -116,7 +111,7 @@ if (deviceId.startsWith("lugnsten")) {
 
 
 // ===============================
-// 📅 DAGLIGT SYSTEM
+// 🥠 LYCKOKAKA – DAGLIGT CACHAT
 // ===============================
 function getDate() {
     return new Date().toISOString().split("T")[0];
@@ -126,21 +121,30 @@ function dailyKey() {
     return `${deviceId}-daily-${getDate()}`;
 }
 
-function randomQuote() {
-    return activeQuotes[
-        Math.floor(Math.random() * activeQuotes.length)
-    ];
-}
-
 function getDailyQuote() {
     const key = dailyKey();
     const saved = localStorage.getItem(key);
 
     if (saved) return saved;
 
-    const quote = randomQuote();
+    const quote = randomQuote(activeQuotes);
     localStorage.setItem(key, quote);
 
+    return quote;
+}
+
+
+// ===============================
+// 🪨 LUGNSTEN – NYTT VID VARJE SKANNING
+// ===============================
+function getLullQuote() {
+    let quote;
+
+    do {
+        quote = randomQuote(activeQuotes);
+    } while (quote === lastLullQuote && activeQuotes.length > 1);
+
+    lastLullQuote = quote;
     return quote;
 }
 
@@ -160,9 +164,13 @@ function updateQuote(quote) {
 }
 
 function newQuote() {
-    const quote = randomQuote();
-    localStorage.setItem(dailyKey(), quote);
-    updateQuote(quote);
+    if (deviceId.startsWith("lugnsten")) {
+        updateQuote(getLullQuote());
+    } else {
+        const quote = randomQuote(activeQuotes);
+        localStorage.setItem(dailyKey(), quote);
+        updateQuote(quote);
+    }
 }
 
 
@@ -173,6 +181,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("subtitle").textContent = subtitleText;
 
-    updateQuote(getDailyQuote());
+    if (deviceId.startsWith("lugnsten")) {
+        updateQuote(getLullQuote());
+    } else {
+        updateQuote(getDailyQuote());
+    }
 
 });
