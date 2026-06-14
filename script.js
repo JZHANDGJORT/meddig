@@ -110,7 +110,7 @@ if (deviceId.startsWith("lugnsten")) {
 } else {
 
     activeQuotes = wisdomQuotes;
-    subtitleText = "En tanke att bära med sig";
+    subtitleText = "Ord för stunden";
 }
 
 
