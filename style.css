@@ -16,17 +16,12 @@ body {
     position: relative;
     overflow: hidden;
 
-    transition: background 1.2s ease;
-}
-
-/* =========================
-   BAKGRUND – mjuk neutral bas
-========================= */
-body {
     background: linear-gradient(180deg, #ffffff 0%, #eef3ee 100%);
 }
 
-/* mjuk “andning” i bakgrund */
+/* =========================
+   “ANDAS”-BAKGRUND
+========================= */
 body::before {
     content: "";
     position: fixed;
@@ -41,19 +36,16 @@ body::before {
     animation: slowBreath 18s ease-in-out infinite;
 }
 
-/* =========================
-   ANIMATIONER
-========================= */
 @keyframes slowBreath {
     0% { transform: scale(1); opacity: 0.6; }
     50% { transform: scale(1.03); opacity: 0.9; }
     100% { transform: scale(1); opacity: 0.6; }
 }
 
-@keyframes textFloat {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-2px); }
-    100% { transform: translateY(0px); }
+/* 🪨 LUGNSTEN – långsammare andning */
+body.lugnsten::before {
+    animation: slowBreath 26s ease-in-out infinite;
+    opacity: 0.7;
 }
 
 /* =========================
@@ -83,7 +75,7 @@ h1 {
    SUBTITLE
 ========================= */
 .subtitle {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: #8a9a8d;
     margin-bottom: 20px;
 }
@@ -104,8 +96,6 @@ h1 {
     transform: translateY(12px);
 
     transition: opacity 0.8s ease, transform 0.8s ease;
-
-    animation: textFloat 14s ease-in-out infinite;
 }
 
 .quote.show {
@@ -122,17 +112,17 @@ h1 {
     right: 25px;
 
     padding: 10px 18px;
-    font-size: 0.9rem;
 
-    border: 1px solid rgba(52, 67, 58, 0.10);
     border-radius: 999px;
+    border: 1px solid rgba(52, 67, 58, 0.12);
 
     background: rgba(255, 255, 255, 0.85);
     color: #5b6a5d;
 
+    font-size: 0.9rem;
     cursor: pointer;
 
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #luckButton:hover {
@@ -152,8 +142,7 @@ h1 {
     height: 46px;
 
     border-radius: 50%;
-
-    border: 1px solid rgba(52, 67, 58, 0.12);
+    border: 1px solid rgba(52, 67, 58, 0.14);
 
     background: rgba(255, 255, 255, 0.75);
     color: #5b6a5d;
@@ -166,22 +155,10 @@ h1 {
 
     cursor: pointer;
 
-    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 #lullButton:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-    background: rgba(255, 255, 255, 0.9);
-}
-
-/* =========================
-   KVÄLL / NATT (för framtid)
-========================= */
-body.evening {
-    background: linear-gradient(180deg, #f7f3ea 0%, #e9e2d6 100%);
-}
-
-body.night {
-    background: linear-gradient(180deg, #e9eef0 0%, #dbe4e6 100%);
 }
