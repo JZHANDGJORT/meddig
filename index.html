@@ -7,11 +7,12 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- 🌿 Default till kaka01 om ingen ID finns -->
+    <!-- 🌿 Säkerställ att vi alltid har ett kaka-ID -->
     <script>
         const params = new URLSearchParams(window.location.search);
         const id = params.get("id");
 
+        // Om ingen kaka → standard till första riktiga kaka
         if (!id) {
             window.location.replace("?id=kaka01");
         }
