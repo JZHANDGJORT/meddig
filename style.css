@@ -15,20 +15,14 @@ body {
 
     position: relative;
     overflow: hidden;
-}
 
-/* =========================
-   DYGNSTONER (bakgrund)
-   ändras automatiskt via JS-free CSS trick
-========================= */
-
-/* MORRON */
-body {
     background:
         linear-gradient(180deg, #ffffff 0%, #edf3ed 100%);
 }
 
-/* extra lager som “andas” */
+/* =========================
+   BAKGRUND SOM "ANDAS"
+========================= */
 body::before {
     content: "";
     position: fixed;
@@ -94,7 +88,20 @@ h1 {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #7a8a7d;
-    margin-bottom: 60px;
+    margin-bottom: 12px;
+}
+
+/* =========================
+   UNDERTITEL
+========================= */
+.subtitle {
+    font-size: 0.95rem;
+    color: #7b8578;
+
+    margin-bottom: 55px;
+
+    letter-spacing: 0.03em;
+    line-height: 1.5;
 }
 
 /* =========================
@@ -160,14 +167,11 @@ button:active {
 }
 
 /* =========================
-   DYGNSKÄNSLA (enkel version)
-   OBS: detta styrs inte av riktig tid i CSS,
-   men vi kan simulera olika känslor senare med klasser
+   KVÄLL
 ========================= */
-
-/* KVÄLL (kan aktiveras senare via class="evening") */
 body.evening {
-    background: linear-gradient(180deg, #f7f3ea 0%, #e9e2d6 100%);
+    background:
+        linear-gradient(180deg, #f7f3ea 0%, #e9e2d6 100%);
 }
 
 body.evening::before {
@@ -176,9 +180,12 @@ body.evening::before {
         radial-gradient(circle at 70% 60%, rgba(180, 170, 160, 0.10), transparent 50%);
 }
 
-/* NATT */
+/* =========================
+   NATT
+========================= */
 body.night {
-    background: linear-gradient(180deg, #e9eef0 0%, #dbe4e6 100%);
+    background:
+        linear-gradient(180deg, #e9eef0 0%, #dbe4e6 100%);
 }
 
 body.night::before {
