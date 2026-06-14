@@ -18,7 +18,7 @@ function getTimeOfDay() {
 
 
 // ===============================
-// 🥠 LYCKOKAKA (daglig stabilitet)
+// 🥠 LYCKOKAKA
 // ===============================
 const wisdomQuotes = [
     "Varje liten handling formar framtiden.",
@@ -32,44 +32,77 @@ const wisdomQuotes = [
     "Framtiden är inte färdigskriven.",
     "Du behöver inte se hela vägen för att ta nästa steg.",
     "Ljuset kommer tillbaka, även efter långa vintrar.",
-    "Allt börjar med något litet."
+    "Allt börjar med något litet.",
+    "Det du gör nu spelar roll, även om det känns litet.",
+    "Du behöver inte ha allt klart för att börja.",
+    "Det enkla är ofta det som håller längst.",
+    "Det är okej att inte veta än.",
+    "Små förändringar kan göra stor skillnad över tid.",
+    "Du är redan på väg.",
+    "Det finns tid att förstå senare.",
+    "Inte allt behöver lösas idag.",
+    "Du ser inte hela bilden än.",
+    "Det du söker kan ta en annan väg till dig.",
+    "Stanna lite i det som är just nu.",
+    "Det behöver inte bli perfekt för att vara rätt."
 ];
 
 
 // ===============================
-// 🪨 LUGNSTEN (känslosystem per skanning)
+// 🪨 LUGNSTEN – CALL
 // ===============================
-
-// 🌿 call (start / närvaro)
 const calmCallQuotes = [
     "En ny dag. Du behöver inte ha bråttom in i den.",
     "Börja mjukt.",
     "Det räcker att ta första steget.",
-    "Du får vara här utan att göra något mer."
+    "Du får vara här utan att göra något mer.",
+    "Andas in lite långsammare.",
+    "Du behöver inte hinna ikapp något.",
+    "Det är okej att börja försiktigt.",
+    "Inget måste lösas direkt nu.",
+    "Du kan få vakna i din egen takt.",
+    "Det finns inget du behöver bevisa här."
 ];
 
-// 🤝 social (prestationsoro / obekvämhet)
+
+// ===============================
+// 🤝 LUGNSTEN – SOCIAL
+// ===============================
 const calmSocialQuotes = [
     "Du behöver inte prestera här.",
     "Du får ta det i din egen takt.",
     "Du behöver inte säga rätt saker.",
     "Det räcker att du är här.",
-    "Du behöver inte vara på ett visst sätt."
+    "Du behöver inte vara på ett visst sätt.",
+    "Du behöver inte passa in perfekt.",
+    "Det är okej att vara lite obekväm.",
+    "Du kan få vara tyst om du vill.",
+    "Du behöver inte göra intryck.",
+    "Du får ta plats på ditt eget sätt.",
+    "Det är okej att bara observera."
 ];
 
-// 🪨 reset (kväll / släppa dagen)
+
+// ===============================
+// 🪨 LUGNSTEN – RESET
+// ===============================
 const calmResetQuotes = [
     "Dagen är redan tillräcklig.",
     "Du behöver inte lösa något mer idag.",
     "Låt det som varit få vila nu.",
     "Du får släppa taget om resten.",
     "Det räcker att dagen får vara som den var.",
-    "Du är klar för idag."
+    "Du är klar för idag.",
+    "Du kan lägga ner dagen här.",
+    "Inget mer behöver bearbetas nu.",
+    "Du får vila från tankarna en stund.",
+    "Det är okej att stänga ner nu.",
+    "Du behöver inte ta med allt vidare."
 ];
 
 
 // ===============================
-// 📊 LUGNSTEN – ingen “dag-cache”, bara session-minne
+// 🪨 LUGNSTEN – STATE
 // ===============================
 let lastLullQuote = null;
 
@@ -104,14 +137,13 @@ if (deviceId.startsWith("lugnsten")) {
     subtitleText = "En liten trygghet i fickan";
 
 } else {
-
     activeQuotes = wisdomQuotes;
     subtitleText = "Ord för stunden";
 }
 
 
 // ===============================
-// 🥠 LYCKOKAKA – DAGLIGT CACHAT
+// 🥠 LYCKOKAKA – DAGLIGT
 // ===============================
 function getDate() {
     return new Date().toISOString().split("T")[0];
@@ -127,7 +159,7 @@ function getDailyQuote() {
 
     if (saved) return saved;
 
-    const quote = randomQuote(activeQuotes);
+    const quote = randomQuote(wisdomQuotes);
     localStorage.setItem(key, quote);
 
     return quote;
@@ -135,7 +167,7 @@ function getDailyQuote() {
 
 
 // ===============================
-// 🪨 LUGNSTEN – NYTT VID VARJE SKANNING
+// 🪨 LUGNSTEN – NYTT VID SKANNING
 // ===============================
 function getLullQuote() {
     let quote;
@@ -167,7 +199,7 @@ function newQuote() {
     if (deviceId.startsWith("lugnsten")) {
         updateQuote(getLullQuote());
     } else {
-        const quote = randomQuote(activeQuotes);
+        const quote = randomQuote(wisdomQuotes);
         localStorage.setItem(dailyKey(), quote);
         updateQuote(quote);
     }
