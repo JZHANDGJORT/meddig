@@ -1,8 +1,10 @@
 // ===============================
-// 🔗 ID
+// 🔗 ID (NFC / kaka / sten)
 // ===============================
 const params = new URLSearchParams(window.location.search);
 const deviceId = params.get("id") || "lyckokaka01";
+
+const isLugnsten = deviceId.startsWith("lugnsten");
 
 
 // ===============================
@@ -22,114 +24,64 @@ function getTimeOfDay() {
 // ===============================
 const wisdomQuotes = [
     "Varje liten handling formar framtiden.",
-    "Tålamod öppnar fler dörrar än stress.",
     "Små steg kan leda långt.",
-    "Det som växer långsamt får djupa rötter.",
     "Du behöver inte förstå allt idag.",
-    "Vardagen är större än den verkar.",
     "Små glädjeämnen räknas också.",
-    "Något gott kan fortfarande hända idag.",
     "Framtiden är inte färdigskriven.",
-    "Du behöver inte se hela vägen för att ta nästa steg.",
-    "Ljuset kommer tillbaka, även efter långa vintrar.",
-    "Allt börjar med något litet.",
-    "Det du gör nu spelar roll, även om det känns litet.",
     "Du är redan på väg.",
     "Det är okej att inte veta än.",
-    "Små förändringar kan göra stor skillnad över tid."
+    "Allt börjar med något litet.",
+    "Du behöver inte se hela vägen för att ta nästa steg.",
+    "Ljuset kommer tillbaka, även efter långa vintrar.",
+    "Det du gör nu spelar roll, även om det känns litet."
 ];
 
 
 // ===============================
-// 🪨 LUGNSTEN – CALL
+// 🪨 LUGNSTEN
 // ===============================
 const calmCallQuotes = [
-    "En ny dag. Du behöver inte ha bråttom in i den.",
-    "Börja mjukt.",
-    "Det räcker att ta första steget.",
-    "Du får vara här utan att göra något mer.",
-    "Andas in lite långsammare.",
-    "Du kan få vakna i din egen takt.",
-    "Det finns inget du behöver bevisa här."
+    "Du får börja mjukt idag.",
+    "Du behöver inte ha bråttom in i den här stunden.",
+    "Det räcker att du är här."
 ];
 
-
-// ===============================
-// 🤝 LUGNSTEN – SOCIAL
-// ===============================
 const calmSocialQuotes = [
     "Du behöver inte prestera här.",
-    "Du får ta det i din egen takt.",
-    "Det räcker att du är här.",
-    "Du behöver inte vara på ett visst sätt.",
     "Det är okej att vara lite obekväm.",
-    "Du behöver inte göra intryck.",
-    "Du får vara tyst om du vill.",
-    "Det är okej att bara observera."
+    "Du får bara vara."
 ];
 
-
-// ===============================
-// 🪨 LUGNSTEN – RESET
-// ===============================
 const calmResetQuotes = [
     "Dagen är redan tillräcklig.",
-    "Du behöver inte lösa något mer idag.",
-    "Låt det som varit få vila nu.",
-    "Du får släppa taget om resten.",
-    "Det räcker att dagen får vara som den var.",
-    "Du är klar för idag.",
-    "Du kan lägga ner dagen här.",
-    "Det är okej att stänga ner nu.",
-    "Du behöver inte ta med allt vidare."
+    "Du kan släppa taget om resten.",
+    "Du behöver inte ta med allt vidare.",
+    "Du är klar för idag."
 ];
 
 
 // ===============================
-// 🧠 STATE
+// 🔧 HELPERS
 // ===============================
-let lastLullQuote = null;
-
-
-// ===============================
-// 🔗 HELPERS
-// ===============================
-function randomQuote(list) {
+function random(list) {
     return list[Math.floor(Math.random() * list.length)];
 }
 
 
 // ===============================
-// 🎯 VÄLJ LUGNSTEN-LÄGE
+// 🪨 LUGNSTEN LOGIK
 // ===============================
 function getLullList() {
-    const timeOfDay = getTimeOfDay();
+    const t = getTimeOfDay();
 
-    if (timeOfDay === "morning") return calmCallQuotes;
-    if (timeOfDay === "evening") return calmResetQuotes;
+    if (t === "morning") return calmCallQuotes;
+    if (t === "evening") return calmResetQuotes;
     return calmSocialQuotes;
 }
 
 
 // ===============================
-// 🪨 LUGNSTEN – NYTT CIKTAT PER SKANNING
-// ===============================
-function getLullQuote() {
-    const list = getLullList();
-
-    let quote;
-
-    do {
-        quote = randomQuote(list);
-    } while (quote === lastLullQuote && list.length > 1);
-
-    lastLullQuote = quote;
-    return quote;
-}
-
-
-// ===============================
-// 🥠 LYCKOKAKA – DAGLIGT
+// 🥠 DAGLIG LYCKOKAKA
 // ===============================
 function getDate() {
     return new Date().toISOString().split("T")[0];
@@ -144,7 +96,7 @@ function getDailyQuote() {
 
     if (saved) return saved;
 
-    const quote = randomQuote(wisdomQuotes);
+    const quote = random(wisdomQuotes);
     localStorage.setItem(dailyKey(), quote);
 
     return quote;
@@ -152,30 +104,37 @@ function getDailyQuote() {
 
 
 // ===============================
+// 🪨 LUGNSTEN – NYTT VARJE SKANNING
+// ===============================
+function getLullQuote() {
+    const list = getLullList();
+    return random(list);
+}
+
+
+// ===============================
 // ✨ UI
 // ===============================
-function updateQuote(quote) {
-    const quoteEl = document.getElementById("quote");
+function updateQuote(text) {
+    const el = document.getElementById("quote");
 
-    quoteEl.classList.remove("show");
+    el.classList.remove("show");
 
     setTimeout(() => {
-        quoteEl.textContent = quote;
-        quoteEl.classList.add("show");
+        el.textContent = text;
+        el.classList.add("show");
     }, 200);
 }
 
 
 // ===============================
-// 🔁 KNAPP ACTION
+// 🔁 ACTION
 // ===============================
 function newQuote() {
-    if (deviceId.startsWith("lugnsten")) {
+    if (isLugnsten) {
         updateQuote(getLullQuote());
     } else {
-        const quote = randomQuote(wisdomQuotes);
-        localStorage.setItem(dailyKey(), quote);
-        updateQuote(quote);
+        updateQuote(getDailyQuote());
     }
 }
 
@@ -185,21 +144,27 @@ function newQuote() {
 // ===============================
 window.addEventListener("DOMContentLoaded", () => {
 
-    document.getElementById("subtitle").textContent =
-        deviceId.startsWith("lugnsten")
-            ? "En liten trygghet i fickan"
-            : "Ord för stunden";
-
+    const subtitle = document.getElementById("subtitle");
     const luckBtn = document.getElementById("luckButton");
     const lullBtn = document.getElementById("lullButton");
 
-    if (deviceId.startsWith("lugnsten")) {
-        luckBtn.style.display = "none";
-        lullBtn.style.display = "block";
+    if (isLugnsten) {
+        document.body.classList.add("lugnsten");
+
+        subtitle.textContent = "En liten trygghet i fickan";
+
+        if (luckBtn) luckBtn.style.display = "none";
+        if (lullBtn) lullBtn.style.display = "flex";
+
         updateQuote(getLullQuote());
+
     } else {
-        luckBtn.style.display = "block";
-        lullBtn.style.display = "none";
+
+        subtitle.textContent = "Ord för stunden";
+
+        if (luckBtn) luckBtn.style.display = "block";
+        if (lullBtn) lullBtn.style.display = "none";
+
         updateQuote(getDailyQuote());
     }
 });
