@@ -20,7 +20,7 @@ body {
 }
 
 /* =========================
-   “ANDAS”-BAKGRUND
+   BAKGRUND
 ========================= */
 body::before {
     content: "";
@@ -30,22 +30,51 @@ body::before {
     z-index: 0;
 
     background:
-        radial-gradient(circle at 30% 30%, rgba(180, 210, 180, 0.10), transparent 40%),
-        radial-gradient(circle at 70% 60%, rgba(200, 220, 200, 0.08), transparent 45%);
+        radial-gradient(circle at 30% 30%, rgba(180,210,180,0.10), transparent 40%),
+        radial-gradient(circle at 70% 60%, rgba(200,220,200,0.08), transparent 45%);
 
     animation: slowBreath 18s ease-in-out infinite;
 }
 
 @keyframes slowBreath {
-    0% { transform: scale(1); opacity: 0.6; }
-    50% { transform: scale(1.03); opacity: 0.9; }
-    100% { transform: scale(1); opacity: 0.6; }
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.03);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
 }
 
-/* 🪨 LUGNSTEN – långsammare andning */
+/* =========================
+   🪨 LUGNSTEN
+========================= */
 body.lugnsten::before {
     animation: slowBreath 26s ease-in-out infinite;
-    opacity: 0.7;
+}
+
+/* =========================
+   ❤️ HJÄRTA
+========================= */
+body.hjarta {
+    background: linear-gradient(
+        180deg,
+        #fffdfc 0%,
+        #f5efec 100%
+    );
+}
+
+body.hjarta::before {
+    background:
+        radial-gradient(circle at 30% 30%, rgba(220,180,180,0.10), transparent 40%),
+        radial-gradient(circle at 70% 60%, rgba(230,200,190,0.08), transparent 45%);
+
+    animation: slowBreath 22s ease-in-out infinite;
 }
 
 /* =========================
@@ -72,7 +101,7 @@ h1 {
 }
 
 /* =========================
-   SUBTITLE
+   UNDERTITEL
 ========================= */
 .subtitle {
     font-size: 0.85rem;
@@ -95,7 +124,9 @@ h1 {
     opacity: 0;
     transform: translateY(12px);
 
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
 }
 
 .quote.show {
@@ -104,7 +135,7 @@ h1 {
 }
 
 /* =========================
-   🥠 LYCKOKAKA-KNAPP
+   🥠 + ❤️ KNAPP
 ========================= */
 #luckButton {
     position: fixed;
@@ -114,15 +145,17 @@ h1 {
     padding: 10px 18px;
 
     border-radius: 999px;
-    border: 1px solid rgba(52, 67, 58, 0.12);
+    border: 1px solid rgba(52,67,58,0.12);
 
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255,255,255,0.85);
     color: #5b6a5d;
 
     font-size: 0.9rem;
     cursor: pointer;
 
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 #luckButton:hover {
@@ -131,7 +164,7 @@ h1 {
 }
 
 /* =========================
-   🪨 LUGNSTEN-KNAPP (ikon)
+   🪨 IKONKNAPP
 ========================= */
 #lullButton {
     position: fixed;
@@ -142,20 +175,22 @@ h1 {
     height: 46px;
 
     border-radius: 50%;
-    border: 1px solid rgba(52, 67, 58, 0.14);
+    border: 1px solid rgba(52,67,58,0.14);
 
-    background: rgba(255, 255, 255, 0.75);
-    color: #5b6a5d;
-
-    font-size: 20px;
+    background: rgba(255,255,255,0.75);
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    font-size: 20px;
+    color: #5b6a5d;
+
     cursor: pointer;
 
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 #lullButton:hover {
