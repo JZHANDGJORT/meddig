@@ -345,7 +345,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     else if (isHjarta) {
         document.body.classList.add("hjarta");
-        subtitle.textContent = "Några vänliga ord till dig själv";
+        subtitle.textContent = "Till dig själv";
 
         luckBtn.textContent = "Ett ord till";
         lullBtn.style.display = "none";
@@ -354,7 +354,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     else {
-        subtitle.textContent = "Ord för stunden";
+        subtitle.textContent = "En vänlig påminnelse";
 
         luckBtn.textContent = "Ett annat perspektiv";
         lullBtn.style.display = "none";
