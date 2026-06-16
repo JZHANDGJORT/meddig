@@ -340,18 +340,21 @@ function random(list) {
 // ===============================
 // 🪨 LUGNSTEN
 // ===============================
+// ===============================
+// 🪨 LUGNSTEN
+// ===============================
 function getLullQuote() {
     const time = getTimeOfDay();
 
     if (time === "morning") {
-        return random(calmMorningQuotes, calmDayQuotes);
+        return random(calmMorningQuotes);
     }
 
     if (time === "evening") {
-        return random(calmEveningQuotes, calmDayQuotes);
+        return random(calmEveningQuotes);
     }
 
-    return random(calmDayQuotes, calmMorningQuotes);
+    return random(calmDayQuotes);
 }
 
 // ===============================
