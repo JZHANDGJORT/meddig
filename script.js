@@ -318,6 +318,80 @@ const calmEveningQuotes = [
     "Du behöver inte förbereda morgondagen nu.",
     "Du får avsluta dagen utan eftertanke."
 ];
+const freyjaQuotes = [
+
+    // =========================
+    // 🌙 30 st – riktning / liv / “lyckokaka”-känsla
+    // =========================
+    "Du är redan på väg, även när det inte känns så.",
+    "Det du söker har redan börjat röra sig mot dig.",
+    "Små steg är fortfarande steg framåt.",
+    "Du behöver inte se hela vägen för att fortsätta.",
+    "Det är okej att inte veta än.",
+    "Allt behöver inte vara klart för att vara sant.",
+    "Du får ändra riktning utan att det var fel innan.",
+    "Det som känns oklart nu kan bli tydligt senare.",
+    "Du är mitt i något som håller på att bli.",
+    "Du behöver inte skynda på din egen utveckling.",
+    "Det du gör i tysthet bygger mer än du tror.",
+    "Du får låta saker ta den tid de behöver.",
+    "Du är inte sen, du är i rörelse.",
+    "Det finns inget rätt tempo du måste följa.",
+    "Du behöver inte ha kontroll för att det ska gå framåt.",
+    "Det som är ditt kommer inte att missa dig.",
+    "Du får vara under förändring.",
+    "Du behöver inte ha alla svar för att fortsätta.",
+    "Det lilla du gör spelar större roll än du ser.",
+    "Du får vara i processen utan att skynda ut ur den.",
+    "Du behöver inte förstå allt samtidigt.",
+    "Det som känns stilla kan ändå vara rörelse.",
+    "Du är inte fast, du är på väg.",
+    "Du får låta livet vara lite ofärdigt.",
+    "Det som väntar på dig har tålamod.",
+    "Du behöver inte jaga det som redan är på väg till dig.",
+    "Du får börja där du är, inte där du tror du borde vara.",
+    "Du är redan i förändring, även när det känns stilla.",
+    "Det du undrar över håller redan på att svara dig.",
+    "Du behöver inte veta vart allt leder.",
+
+    // =========================
+    // 🌿 20 st – tacksamhet
+    // =========================
+    "Tack för att du ser det lilla.",
+    "Ett vänligt ord kan följa ett barn länge.",
+    "Du gör skillnad, även de dagar det inte känns så.",
+    "Barn minns kanske inte allt du gör, men hur du fick dem att känna sig.",
+    "Trygghet börjar ofta med en människa.",
+    "Du gör rummet mjukare bara genom att vara där.",
+    "Det känns lättare att försöka när du är nära.",
+    "Du får saker att kännas möjliga.",
+    "Tack för att du lyssnar på riktigt.",
+    "Du gör mer än du kanske själv märker.",
+    "Du ser sådant andra lätt missar.",
+    "Det du gör blir kvar längre än du tror.",
+    "Du gör vardagen lite tryggare.",
+    "Tack för att du har tålamod.",
+    "Du betyder mer än du kanske får höra.",
+    "Du gör det lättare att våga.",
+    "Det du säger kan stanna kvar länge i ett barn.",
+    "Du gör skillnad i det lilla varje dag.",
+    "Det känns bra när någon tror på en.",
+    "Du hjälper mer än du kanske märker själv.",
+
+    // =========================
+    // 🌿 10 st – pedagog (barnets röst, tacksamhet + relation)
+    // =========================
+    "Du gör det lätt att förstå när något känns svårt.",
+    "Jag vågar mer när du finns där.",
+    "Du förklarar så jag kan hänga med.",
+    "Det känns tryggt när du hjälper mig.",
+    "Du blir inte arg när jag inte kan direkt.",
+    "Du ser när jag försöker, även om det inte blir rätt.",
+    "Jag känner mig lugnare när du är här.",
+    "Du hjälper mig att fortsätta när jag vill ge upp.",
+    "Det känns enklare att lära sig med dig.",
+    "Du gör att jag tror mer på mig själv."
+];
 
 // ===============================
 // ⏰ DYGN
