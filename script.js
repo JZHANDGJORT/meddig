@@ -524,7 +524,7 @@ window.addEventListener("DOMContentLoaded", () => {
     
     title.textContent = "FRÅN FREYJA";
             
-    subtitle.textContent = "En liten hälsnin";
+    subtitle.textContent = "En liten hälsning";
 
     luckBtn.textContent = "♡";
 
