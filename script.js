@@ -478,8 +478,13 @@ function updateQuote(text) {
 function newQuote() {
     if (isLugnsten) {
         updateQuote(getLullQuote());
+
     } else if (isHjarta) {
         updateQuote(random(heartQuotes));
+
+    } else if (isFreyja) {
+        updateQuote(random(freyjaQuotes));
+
     } else {
         updateQuote(random(wisdomQuotes));
     }
