@@ -512,6 +512,18 @@ window.addEventListener("DOMContentLoaded", () => {
 
         updateQuote(getDailyQuote());
     }
+        else if (isFreyja) {
+
+    document.body.classList.add("freyja");
+
+    subtitle.textContent = "En hälsning från Freyja";
+
+    luckBtn.textContent = "En hälsning till";
+
+    lullBtn.style.display = "none";
+
+    updateQuote(getDailyQuote());
+}
 
     else {
         subtitle.textContent = "En vänlig påminnelse";
