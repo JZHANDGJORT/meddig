@@ -494,6 +494,7 @@ function newQuote() {
 // 🚀 START
 // ===============================
 window.addEventListener("DOMContentLoaded", () => {
+    const title = document.querySelector("h1");
     const subtitle = document.getElementById("subtitle");
     const luckBtn = document.getElementById("luckButton");
     const lullBtn = document.getElementById("lullButton");
