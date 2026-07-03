@@ -154,6 +154,17 @@ h1 {
 /* =========================
     FRÅN FREYJA
 ========================= */
+body.freyja h1 {
+    color: #d48b00;
+}
+
+body.freyja .subtitle {
+    color: #c18a00;
+}
+
+body.freyja .quote {
+    color: #6b4d00;
+}
 
 /* =========================
    🥠 + ❤️ KNAPP
