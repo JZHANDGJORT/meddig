@@ -446,10 +446,14 @@ function getDailyQuote() {
 
     let quote;
     if (isHjarta) {
-        quote = random(heartQuotes);
-    } else {
-        quote = random(wisdomQuotes);
-    }
+    quote = random(heartQuotes);
+
+} else if (isFreyja) {
+    quote = random(freyjaQuotes);
+
+} else {
+    quote = random(wisdomQuotes);
+}
 
     localStorage.setItem(dailyKey(), quote);
     return quote;
