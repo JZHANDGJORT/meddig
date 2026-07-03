@@ -526,7 +526,7 @@ window.addEventListener("DOMContentLoaded", () => {
             
     subtitle.textContent = "En liten hälsnin";
 
-    luckBtn.textContent = "♥️";
+    luckBtn.textContent = "♡";
 
     lullBtn.style.display = "none";
 
