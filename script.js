@@ -521,7 +521,9 @@ window.addEventListener("DOMContentLoaded", () => {
         else if (isFreyja) {
 
     document.body.classList.add("freyja");
-
+    
+    title.textContent = "FRÅN FREYJA";
+            
     subtitle.textContent = "En hälsning från Freyja";
 
     luckBtn.textContent = "En hälsning till";
