@@ -76,6 +76,24 @@ body.hjarta::before {
 
     animation: slowBreath 22s ease-in-out infinite;
 }
+/* =========================
+    FRÅN FREYJA
+========================= */
+body.freyja {
+    background: linear-gradient(
+        180deg,
+        #fffef7 0%,
+        #fff5cf 100%
+    );
+}
+
+body.freyja::before {
+    background:
+        radial-gradient(circle at 30% 30%, rgba(255,220,120,0.15), transparent 40%),
+        radial-gradient(circle at 70% 60%, rgba(255,180,80,0.10), transparent 45%);
+
+    animation: slowBreath 18s ease-in-out infinite;
+}
 
 /* =========================
    CONTAINER
