@@ -325,65 +325,189 @@ const calmEveningQuotes = [
 // ===============================
 const freyjaQuotes = [
 
-"Jag tänkte på en sak...\nDu gör världen lite mjukare bara genom att vara du.",
+/* =========================
+🌿 BLI SEDD (20)
+========================= */
 
-"Idag ville jag bara säga...\nTack för allt det där lilla som ingen riktigt ser.",
+"Jag tänkte på en sak...\nDet finns barn som känner sig tryggare bara för att du är där.",
 
-"Om ingen sagt det idag...\nDu gör större skillnad än du tror.",
+"Jag ville bara säga...\nDu ser sådant som andra ofta missar.",
 
-"En liten hälsning.\nJag hoppas att du också känner dig omhändertagen ibland.",
+"Om ingen sagt det idag...\nDin närvaro gör skillnad, även i det tysta.",
 
-"Jag kom att tänka på dig.\nNågon känner sig tryggare tack vare dig.",
+"En liten hälsning.\nNågon känner sig mer sedd för att du finns.",
 
-"Jag hoppas att du vet...\nBarn kommer kanske inte ihåg allt som sades, men de kommer ihåg hur det kändes att vara med dig.",
+"Jag hoppas att du vet...\nDet du gör i det lilla betyder mer än du anar.",
 
-"En liten tanke.\nDen vänlighet du ger vidare stannar ofta kvar längre än du anar.",
+"Förresten...\nDet märks när någon verkligen blir sedd av dig.",
 
-"Jag ville bara lämna en hälsning.\nDu behöver inte göra allt perfekt för att betyda mycket.",
+"Jag tänkte på en sak...\nTrygghet börjar ofta med att någon faktiskt ser en.",
 
-"Förresten...\nDu är en sådan människa som gör vardagar lite finare.",
+"Jag ville bara säga...\nDu gör människor lite lugnare bara genom att vara du.",
 
-"Jag hoppas att du vet...\nNågon har gått hem och känt sig lite modigare tack vare dig.",
+"Om ingen sagt det idag...\nNågon har gått hem och känt sig förstådd tack vare dig.",
 
-"En liten hälsning.\nDu planterar frön som kanske blommar långt senare.",
+"En liten hälsning.\nDu gör det lättare för andra att vara sig själva.",
 
-"Jag tänkte på en sak...\nTrygghet börjar ofta med en enda människa.",
+"Jag hoppas att du vet...\nDet finns människor som vågar mer för att du finns där.",
 
-"Om du behöver höra det idag...\nDu räcker längre än du tror.",
+"Förresten...\nAtt bli sedd kan förändra mer än man tror.",
 
-"Jag ville bara säga tack.\nFör ditt tålamod.",
+"Jag tänkte på en sak...\nDu ger andra känslan av att de räcker som de är.",
 
-"En liten tanke.\nDet finns barn som kommer bära med sig känslan av att ha blivit sedda av dig.",
+"Jag ville bara säga...\nDu får människor att känna sig lite mindre ensamma.",
 
-"Jag hoppas att du vet...\nDet är inte alltid de stora sakerna som förändrar mest.",
+"Om ingen sagt det idag...\nDin blick och ditt tålamod betyder mycket.",
 
-"Förresten...\nEtt vänligt leende kan följa någon genom en hel dag.",
+"En liten hälsning.\nDet är fint hur du ser det som inte alltid sägs.",
 
-"Jag tänkte på dig.\nDu gör det lättare för andra att våga.",
+"Jag hoppas att du vet...\nDu gör vardagen mjukare för andra.",
 
-"En liten hälsning.\nDet är fint att just du finns.",
+"Förresten...\nNågon känner sig tryggare bara för att du lyssnar.",
 
-"Idag ville jag bara säga...\nDu behöver inte tvivla på allt det fina du gör.",
+"Jag tänkte på en sak...\nDet du ser hos andra är en gåva.",
 
-"Jag hoppas att du vet...\nDin närvaro betyder mer än du kanske får höra.",
+"En liten hälsning.\nDu gör skillnad utan att behöva anstränga dig för det.",
 
-"En liten tanke.\nDu behöver inte se resultatet för att ditt arbete ska vara viktigt.",
 
-"Jag kom att tänka på en sak...\nAtt bli sedd kan förändra en hel dag.",
+/* =========================
+🌿 BARN & MINNEN (20)
+========================= */
 
-"Om ingen sagt det idag...\nTack för att du bryr dig.",
+"Jag tänkte på en sak...\nBarn kommer kanske inte minnas exakt vad du sa, men hur det kändes att vara med dig.",
 
-"En liten hälsning.\nDu gör det lite tryggare att vara människa.",
+"Jag ville bara säga...\nDet du gör idag kan bli ett varmt minne långt senare.",
 
-"Jag ville bara säga...\nDet märks när någon gör saker med hjärtat.",
+"Om ingen sagt det idag...\nDu formar trygghet som kan stanna kvar länge.",
 
-"Jag hoppas att du vet...\nNågon minns ditt tålamod.",
+"En liten hälsning.\nEtt barn minns ofta känslan mer än orden.",
 
-"Förresten...\nDu behöver inte göra mer för att vara värdefull.",
+"Jag hoppas att du vet...\nDu lämnar spår i människors känslor, inte bara i deras dag.",
 
-"En liten tanke.\nDet finns människor som ler lite mer när de ser dig.",
+"Förresten...\nSmå stunder av trygghet blir ofta stora minnen.",
 
-"Jag tänkte på en sak...\nVärme smittar. Tack för att du sprider den."
+"Jag tänkte på en sak...\nBarn bär med sig hur de blev bemötta.",
+
+"Jag ville bara säga...\nDet du gör kan leva kvar längre än du ser.",
+
+"Om ingen sagt det idag...\nNågon kommer minnas din värme långt fram i tiden.",
+
+"En liten hälsning.\nDu skapar känslor som stannar kvar.",
+
+"Jag hoppas att du vet...\nDet är ofta de små sakerna som blir de största minnena.",
+
+"Förresten...\nEtt vänligt bemötande kan följa någon genom livet.",
+
+"Jag tänkte på en sak...\nDu hjälper människor att känna sig trygga nog att växa.",
+
+"Jag ville bara säga...\nDet du gör blir en del av någons historia.",
+
+"Om ingen sagt det idag...\nDu kan vara en del av ett barns bästa minne.",
+
+"En liten hälsning.\nDet du ger i stunden lever ofta vidare.",
+
+"Jag hoppas att du vet...\nDu påverkar mer än du kan se just nu.",
+
+"Förresten...\nTrygghet som byggs idag kan bli styrka imorgon.",
+
+"Jag tänkte på en sak...\nDet finns barn som bär med sig känslan av att vara sedda av dig.",
+
+"En liten hälsning.\nDu gör mer än du tror för framtida minnen.",
+
+
+/* =========================
+🌿 TACK (15)
+========================= */
+
+"Jag ville bara säga...\nTack för allt det där som inte alltid syns.",
+
+"Om ingen sagt det idag...\nDin insats märks mer än du tror.",
+
+"En liten hälsning.\nTack för ditt tålamod.",
+
+"Jag hoppas att du vet...\nDu gör skillnad i det lilla varje dag.",
+
+"Förresten...\nTack för att du fortsätter även när det är mycket.",
+
+"Jag tänkte på en sak...\nDet du gör betyder mer än du kanske får höra.",
+
+"Jag ville bara säga...\nTack för att du bryr dig.",
+
+"En liten hälsning.\nDin omtanke gör skillnad.",
+
+"Om ingen sagt det idag...\nTack för att du ser människor.",
+
+"Jag hoppas att du vet...\nDet du gör är viktigt, även när det känns osynligt.",
+
+"Förresten...\nTack för att du orkar vara där för andra.",
+
+"Jag tänkte på en sak...\nDin vänlighet sprider sig vidare.",
+
+"En liten hälsning.\nTack för att du gör vardagen lite mjukare.",
+
+"Jag ville bara säga...\nDet du gör uppskattas mer än du kanske vet.",
+
+"Jag hoppas att du vet...\nTack för allt du ger.",
+
+
+/* =========================
+🌿 SJÄLVKÄNSLA / OMTANKE (15)
+========================= */
+
+"Jag tänkte på en sak...\nDu behöver inte vara perfekt för att vara värdefull.",
+
+"Jag ville bara säga...\nDu får finnas precis som du är.",
+
+"Om ingen sagt det idag...\nDu räcker redan som du är.",
+
+"En liten hälsning.\nDu behöver inte bära allt själv.",
+
+"Jag hoppas att du vet...\nDu får vara människa, inte bara funktion.",
+
+"Förresten...\nDu är inte ensam i det du känner.",
+
+"Jag tänkte på en sak...\nDu får vila utan att förtjäna det.",
+
+"Jag ville bara säga...\nDu behöver inte göra mer för att vara värd omtanke.",
+
+"Om ingen sagt det idag...\nDet är okej att inte orka allt.",
+
+"En liten hälsning.\nDu får ta plats i ditt eget liv.",
+
+"Jag hoppas att du vet...\nDu är inte dina prestationer.",
+
+"Förresten...\nDu får börja om hur många gånger du vill.",
+
+"Jag tänkte på en sak...\nDu är värd samma omtanke som du ger andra.",
+
+"Jag ville bara säga...\nDet är okej att vara snäll mot sig själv.",
+
+"En liten hälsning.\nDu räcker även när du tvivlar.",
+
+
+/* =========================
+🌿 MOD & HOPP (10)
+========================= */
+
+"Jag tänkte på en sak...\nDu behöver inte se hela vägen för att fortsätta.",
+
+"Jag ville bara säga...\nDu är redan på väg, även om det inte känns så.",
+
+"Om ingen sagt det idag...\nDet du gör i det lilla bygger något större.",
+
+"En liten hälsning.\nDu får ta nästa steg i din egen takt.",
+
+"Jag hoppas att du vet...\nDet finns mer tid än det känns som.",
+
+"Förresten...\nDu är inte sen, du är i rörelse.",
+
+"Jag tänkte på en sak...\nDet som är ditt kommer inte att missa dig.",
+
+"Jag ville bara säga...\nDu får förändras längs vägen.",
+
+"En liten hälsning.\nDu behöver inte ha alla svar idag.",
+
+"Jag hoppas att du vet...\nDet finns plats för både osäkerhet och framåtsteg."
 ];
 
 // ===============================
