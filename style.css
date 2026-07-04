@@ -139,6 +139,8 @@ h1 {
     max-width: 22ch;
     margin: 0 auto;
 
+    white-space: pre-line;
+   
     opacity: 0;
     transform: translateY(12px);
 
