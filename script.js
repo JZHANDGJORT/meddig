@@ -385,6 +385,46 @@ const freyjaQuotes = [
 "Vissa människor blir trygga platser. Kanske är du en av dem.",
 "Den finaste omtanken är ofta den som känns självklar.",
 "Att få vara precis som man är kan vara en av de största gåvorna.",
+
+    "Ibland börjar mod med att någon tror att man klarar det.",
+
+"Nyfikenhet får ofta växa där det känns tryggt.",
+
+"Det finns frågor som är viktigare än svar.",
+
+"Att få försöka igen är också en gåva.",
+
+"En vanlig dag kan bli ett viktigt minne.",
+
+"Ibland är det skrattet man tar med sig hem.",
+
+"Att känna sig välkommen är en fin början på vilken dag som helst.",
+
+"Det finns barn som vågar lite mer för att någon väntade in dem.",
+
+"Att få ta tid på sig kan vara precis det som behövs.",
+
+"Alla framsteg syns inte. Men de händer ändå.",
+
+"Det är okej att växa i sin egen takt.",
+
+"Den som får vara nyfiken lär sig att världen är värd att utforska.",
+
+"Det finns dagar då det viktigaste är att någon känner sig trygg nog att skratta.",
+
+"En stund av lek kan betyda mer än man tror.",
+
+"Att få känna 'jag kan' börjar ofta med någon som säger 'försök'.",
+
+"Den som blir uppmuntrad vågar oftare försöka igen.",
+
+"Det är ofta i de små stunderna som självkänsla växer.",
+
+"Barn behöver inte stressas för att utvecklas.",
+
+"Det finns människor som får andra att känna att de hör hemma.",
+
+"Att bli mött med lugn gör världen lite enklare att förstå.",
 ];
 
 // ===============================
