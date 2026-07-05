@@ -440,7 +440,17 @@ const freyjaQuotes = [
 
 "Att bli bemött med tålamod kan förändra hur man ser på sig själv.",
 
-"En trygg hand behöver inte hålla hårt. Den behöver bara finnas där."
+"En trygg hand behöver inte hålla hårt. Den behöver bara finnas där.",
+
+    "Det finns vuxna man glömmer. Och så finns det de man bär med sig.",
+
+"Man minns inte alltid vad som hände. Men man minns ofta hur det kändes.",
+
+"Vissa människor blir en trygg del av barndomen utan att själva veta om det.",
+
+"En dag kommer någon kanske tänka tillbaka på dig och le.",
+
+"Det finns minnen som inte handlar om vad man gjorde, utan om vem man fick vara.",
 ];
 
 // ===============================
