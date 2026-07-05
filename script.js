@@ -425,6 +425,22 @@ const freyjaQuotes = [
 "Det finns människor som får andra att känna att de hör hemma.",
 
 "Att bli mött med lugn gör världen lite enklare att förstå.",
+
+    "Alla behöver någon som tror lite extra på dem ibland.",
+
+"Det är svårt att veta vilka stunder som blir minnen. Därför är de små stunderna också viktiga.",
+
+"Den som känner sig trygg får lättare mod att prova något nytt.",
+
+"Vänlighet märks inte alltid direkt. Men den stannar ofta kvar.",
+
+"Ibland är det viktigaste som händer att någon känner: 'Här får jag vara jag.'",
+
+"Det finns människor som blir ett lugn för andra utan att själva tänka på det.",
+
+"Att bli bemött med tålamod kan förändra hur man ser på sig själv.",
+
+"En trygg hand behöver inte hålla hårt. Den behöver bara finnas där."
 ];
 
 // ===============================
