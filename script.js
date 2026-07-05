@@ -403,7 +403,8 @@ const freyjaQuotes = [
 
 "Om ingen sagt det idag...\nTack för att du bryr dig.",
 
-"En liten hälsning.\nJag hoppas att du är lika snäll mot dig själv som mot andra."
+"En liten hälsning.\nJag hoppas att du är lika snäll mot dig själv som mot andra.",
+    
 "Jag tänkte på en sak...\nDet finns människor som känner sig lite modigare efter att ha mött dig.",
 
 "Jag ville bara säga...\nTack för att du ser det lilla i det stora.",
