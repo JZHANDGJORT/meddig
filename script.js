@@ -325,19 +325,86 @@ const calmEveningQuotes = [
 // ===============================
 const freyjaQuotes = [
 
-"Jag tänkte på en sak...\nDet finns människor som känner sig tryggare bara för att du finns.",
+"Barn minns kanske inte varje ord. Men de minns hur det kändes att vara med dig.",
 
-"Jag ville bara säga...\nTack för allt det där lilla som ingen riktigt ser.",
+"Någon kommer att minnas hur det kändes att vara med dig.",
 
-"Om ingen sagt det idag...\nDu gör större skillnad än du tror.",
+"Ett barn glömmer ofta vad ni gjorde. Men känslan av att vara trygg kan stanna kvar länge.",
 
-"En liten hälsning.\nNågon kommer att minnas hur det kändes att vara med dig.",
+"Att bli sedd är något många bär med sig långt efter att dagen är slut.",
 
-"Jag hoppas att du vet...\nDu behöver inte vara perfekt för att sätta fina avtryck.",
+"Ibland räcker en lugn vuxen för att ett barn ska våga lite mer.",
 
-"Förresten...\nDet är ofta de små stunderna som blir de stora minnena.",
+"Du kanske inte märker vilka avtryck du lämnar. Den som fick dem gör det.",
 
-"Jag tänkte på en sak...\nBarn minns kanske inte varje ord, men de minns hur de kände sig.",
+"Det du gör idag kommer någon att bära med sig längre än du vet.",
+
+"Alla fina avtryck märks inte direkt.",
+
+"Omtanke syns inte alltid. Men den känns.",
+
+"Någon kommer en dag minnas en vuxen som trodde på dem. Kanske var det du.",
+
+"Ibland förändrar ett lugnt bemötande en hel dag.",
+
+"Trygghet börjar ofta i något väldigt litet.",
+
+"Ett vänligt bemötande kan leva kvar längre än man tror.",
+
+"Det finns barn som känner sig modigare för att du finns.",
+
+"Den som blir lyssnad på lär sig att den är värd att lyssna på.",
+
+"Ibland är det viktigaste som händer under en dag att någon känner sig sedd.",
+
+"Det är svårt att mäta betydelsen av en lugn stund. Men den finns där.",
+
+"Du planterar sådant som kanske blommar långt senare.",
+
+"Barn växer bättre där de känner sig trygga.",
+
+"Det är inte alltid de stora ögonblicken som stannar kvar.",
+
+"En lugn röst kan bli ett tryggt minne.",
+
+"Den som blir bemött med respekt lär sig att ge respekt vidare.",
+
+"Ibland är det finaste du kan ge någon att få känna sig viktig.",
+
+"Det finns barn som kommer minnas hur lugnt det kändes när du var där.",
+
+"Trygghet är något man känner, inte något man förklarar.",
+
+"Att bli trodd på kan förändra hur man ser på sig själv.",
+
+"Du behöver inte märka skillnaden för att den ska finnas.",
+
+"En liten stund av omtanke kan följa någon länge.",
+
+"Det finns avtryck som inte syns, men som ändå formar ett liv.",
+
+"Det är ofta de små handlingarna som bygger förtroende.",
+
+"En människa som känner sig trygg vågar mer.",
+
+"Det finns barn som bär med sig din vänlighet utan att du vet om det.",
+
+"Att någon tar sig tid kan betyda mer än många ord.",
+
+"Det är inte alltid det du säger som stannar kvar. Ofta är det känslan du lämnar efter dig.",
+
+"Någon kommer en dag minnas hur du fick dem att känna sig.",
+
+"Ibland är det enda som behövs att någon stannar upp en liten stund.",
+
+"Trygga vuxna skapar trygga minnen.",
+
+"Det finns omtanke som aldrig får ett tack, men som ändå betyder allt.",
+
+"Vissa avtryck märks först långt senare.",
+
+"Det du gör varje dag betyder mer än du själv kan se."
+
 ];
 
 // ===============================
