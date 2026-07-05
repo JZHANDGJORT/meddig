@@ -363,7 +363,28 @@ const freyjaQuotes = [
 "Trygga vuxna skapar trygga minnen.",
 "Det finns omtanke som aldrig får ett tack, men som ändå betyder allt.",
 "Vissa avtryck märks först långt senare.",
-"Det du gör varje dag betyder mer än du själv kan se."
+"Det du gör varje dag betyder mer än du själv kan se.",
+"Barn behöver inte perfekta vuxna. De behöver vuxna som finns kvar.",
+
+"Ibland är det lugnet någon minns allra längst.",
+"Den som känner sig trygg vågar oftare visa vem den är.",
+"Att bli mött med tålamod kan förändra mer än man tror.",
+"Det är lätt att underskatta värdet av en vanlig dag som känns trygg.",
+"Det finns barn som vågar lite mer eftersom någon trodde på dem.",
+"Den som känner sig välkommen hittar lättare sin plats.",
+"Trygghet byggs ofta i de små ögonblicken.",
+"Ett barn behöver inte att du har alla svar. Bara att du finns där.",
+"Att bli bemött med värme kan följa någon länge.",
+"Det är ofta de lugna stunderna som blir de viktiga.",
+"Den som får känna sig viktig börjar ofta tro att den är det.",
+"Ibland räcker ett 'jag ser dig'.",
+"Det är svårt att mäta betydelsen av att alltid bli mött med vänlighet.",
+"Barn växer i sin egen takt. Trygghet hjälper dem på vägen.",
+"Det finns dagar då det viktigaste du gjorde var något du själv inte tänkte på.",
+"Den som blir lyssnad på lär sig att den är värd att lyssna på.",
+"Vissa människor blir trygga platser. Kanske är du en av dem.",
+"Den finaste omtanken är ofta den som känns självklar.",
+"Att få vara precis som man är kan vara en av de största gåvorna.",
 ];
 
 // ===============================
