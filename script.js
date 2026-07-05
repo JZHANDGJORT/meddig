@@ -365,7 +365,6 @@ const freyjaQuotes = [
 "Vissa avtryck märks först långt senare.",
 "Det du gör varje dag betyder mer än du själv kan se.",
 "Barn behöver inte perfekta vuxna. De behöver vuxna som finns kvar.",
-
 "Ibland är det lugnet någon minns allra längst.",
 "Den som känner sig trygg vågar oftare visa vem den är.",
 "Att bli mött med tålamod kan förändra mer än man tror.",
@@ -385,72 +384,39 @@ const freyjaQuotes = [
 "Vissa människor blir trygga platser. Kanske är du en av dem.",
 "Den finaste omtanken är ofta den som känns självklar.",
 "Att få vara precis som man är kan vara en av de största gåvorna.",
-
-    "Ibland börjar mod med att någon tror att man klarar det.",
-
+"Ibland börjar mod med att någon tror att man klarar det.",
 "Nyfikenhet får ofta växa där det känns tryggt.",
-
 "Det finns frågor som är viktigare än svar.",
-
 "Att få försöka igen är också en gåva.",
-
 "En vanlig dag kan bli ett viktigt minne.",
-
 "Ibland är det skrattet man tar med sig hem.",
-
 "Att känna sig välkommen är en fin början på vilken dag som helst.",
-
 "Det finns barn som vågar lite mer för att någon väntade in dem.",
-
 "Att få ta tid på sig kan vara precis det som behövs.",
-
 "Alla framsteg syns inte. Men de händer ändå.",
-
 "Det är okej att växa i sin egen takt.",
-
 "Den som får vara nyfiken lär sig att världen är värd att utforska.",
-
 "Det finns dagar då det viktigaste är att någon känner sig trygg nog att skratta.",
-
 "En stund av lek kan betyda mer än man tror.",
-
 "Att få känna 'jag kan' börjar ofta med någon som säger 'försök'.",
-
 "Den som blir uppmuntrad vågar oftare försöka igen.",
-
 "Det är ofta i de små stunderna som självkänsla växer.",
-
 "Barn behöver inte stressas för att utvecklas.",
-
 "Det finns människor som får andra att känna att de hör hemma.",
-
 "Att bli mött med lugn gör världen lite enklare att förstå.",
-
-    "Alla behöver någon som tror lite extra på dem ibland.",
-
+"Alla behöver någon som tror lite extra på dem ibland.",
 "Det är svårt att veta vilka stunder som blir minnen. Därför är de små stunderna också viktiga.",
-
 "Den som känner sig trygg får lättare mod att prova något nytt.",
-
 "Vänlighet märks inte alltid direkt. Men den stannar ofta kvar.",
-
 "Ibland är det viktigaste som händer att någon känner: 'Här får jag vara jag.'",
-
 "Det finns människor som blir ett lugn för andra utan att själva tänka på det.",
-
 "Att bli bemött med tålamod kan förändra hur man ser på sig själv.",
-
 "En trygg hand behöver inte hålla hårt. Den behöver bara finnas där.",
-
-    "Det finns vuxna man glömmer. Och så finns det de man bär med sig.",
-
+"Det finns vuxna man glömmer. Och så finns det de man bär med sig.",
 "Man minns inte alltid vad som hände. Men man minns ofta hur det kändes.",
-
 "Vissa människor blir en trygg del av barndomen utan att själva veta om det.",
-
 "En dag kommer någon kanske tänka tillbaka på dig och le.",
-
-"Det finns minnen som inte handlar om vad man gjorde, utan om vem man fick vara.",
+"Det finns minnen som inte handlar om vad man gjorde, utan om vem man fick vara."
 ];
 
 // ===============================
