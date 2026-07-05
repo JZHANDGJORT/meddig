@@ -483,7 +483,27 @@ const freyjaQuotes = [
 
 "Om ingen sagt det idag...\nDu räcker precis som du är.",
 
-"En liten hälsning.\nJag hoppas att du tar med dig något fint från den här dagen."
+"En liten hälsning.\nJag hoppas att du tar med dig något fint från den här dagen.",
+
+"Jag tänkte på en sak...\nBarn växer lite lättare där de känner sig trygga.",
+
+"Jag ville bara säga...\nDet finns människor som bär med sig din vänlighet utan att du vet om det.",
+
+"Om ingen sagt det idag...\nDu hjälper andra att tro lite mer på sig själva.",
+
+"En liten hälsning.\nDet är fint hur du får människor att känna att de hör hemma.",
+
+"Jag hoppas att du vet...\nTrygghet är något man känner. Du ger mycket av den.",
+
+"Förresten...\nNågon kommer minnas hur lugnt det kändes när du var där.",
+
+"Jag tänkte på en sak...\nDet finns barn som en dag kommer minnas någon som trodde på dem. Kanske var det du.",
+
+"Jag ville bara säga...\nDu behöver inte göra stora saker för att göra stor skillnad.",
+
+"Om ingen sagt det idag...\nDet finns människor som tycker om att just du är du.",
+
+"En liten hälsning.\nDet är ofta omtanken som stannar kvar längst."
 ];
 
 // ===============================
