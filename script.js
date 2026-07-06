@@ -426,8 +426,7 @@ const freyjaQuotes = [
 const mammaQuotes = [
     "Du gör tillräckligt.",
     "Ditt barn behöver inte en perfekt mamma.",
-    "Du får vila när du kan.",
-    ...
+    "Du får vila när du kan."
 ];
 
 // ===============================
