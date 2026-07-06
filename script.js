@@ -7,6 +7,7 @@ const deviceId = params.get("id") || "lyckokaka01";
 const isLugnsten = deviceId.startsWith("lugnsten");
 const isHjarta = deviceId.startsWith("hjarta");
 const isFreyja = deviceId.startsWith("freyja");
+const isMamma = deviceId.startsWith("mamma");
 
 // ===============================
 // 🥠 LYCKOKAKA
