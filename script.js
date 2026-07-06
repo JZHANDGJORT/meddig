@@ -575,6 +575,21 @@ window.addEventListener("DOMContentLoaded", () => {
     updateQuote(getDailyQuote());
 }
 
+            else if (isMamma) {
+
+    document.body.classList.add("mamma");
+
+    document.querySelector("h1").textContent = "MAMMAHJÄRTAT";
+
+    subtitle.textContent = "Till dig som precis blivit mamma";
+
+    luckBtn.textContent = "♡";
+
+    lullBtn.style.display = "none";
+
+    updateQuote(getDailyQuote());
+}
+
     else {
         subtitle.textContent = "En vänlig påminnelse";
 
