@@ -638,7 +638,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("h1").textContent = "MAMMAHJÄRTAT";
 
-    subtitle.textContent = "Till dig som precis blivit mamma";
+    subtitle.textContent = "Till dig, Mamma";
 
     luckBtn.textContent = "♡";
 
