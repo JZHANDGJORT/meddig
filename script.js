@@ -487,6 +487,9 @@ function getDailyQuote() {
 } else if (isFreyja) {
     quote = random(freyjaQuotes);
 
+} else if (isMamma) {
+    quote = random(mammaQuotes);
+
 } else {
     quote = random(wisdomQuotes);
 }
