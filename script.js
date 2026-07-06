@@ -524,6 +524,9 @@ function newQuote() {
     } else if (isFreyja) {
         updateQuote(random(freyjaQuotes));
 
+} else if (isMamma) {
+    updateQuote(random(mammaQuotes));
+        
     } else {
         updateQuote(random(wisdomQuotes));
     }
