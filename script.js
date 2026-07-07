@@ -605,8 +605,8 @@ function newQuote() {
     } else if (isHjarta) {
         updateQuote(random(heartQuotes));
 
-    } else if (isFreyja) {
-        updateQuote(random(freyjaQuotes));
+    } else if (isSmahander) {
+        updateQuote(random(smahanderQuotes));
 
 } else if (isMamma) {
     updateQuote(random(mammaQuotes));
@@ -644,11 +644,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
         updateQuote(getDailyQuote());
     }
-        else if (isFreyja) {
+        else if (isSmahander) {
 
-    document.body.classList.add("freyja");
+    document.body.classList.add("smahander");
     
-    title.textContent = "FRÅN FREYJA";
+    title.textContent = "FRÅN SMÅ HÄNDER";
             
     subtitle.textContent = "En liten hälsning";
 
