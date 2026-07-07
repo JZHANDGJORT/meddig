@@ -322,9 +322,9 @@ const calmEveningQuotes = [
 ];
 
 // ===============================
-// FRÅN FREYJA
+// FRÅN SMÅ HÄNDER
 // ===============================
-const freyjaQuotes = [
+const smahanderQuotes = [
 "Barn minns kanske inte varje ord. Men de minns hur det kändes att vara med dig.",
 "Någon kommer att minnas hur det kändes att vara med dig.",
 "Ett barn glömmer ofta vad ni gjorde. Men känslan av att vara trygg kan stanna kvar länge.",
