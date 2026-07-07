@@ -568,8 +568,8 @@ function getDailyQuote() {
     if (isHjarta) {
     quote = random(heartQuotes);
 
-} else if (isFreyja) {
-    quote = random(freyjaQuotes);
+} else if (isSmahander) {
+    quote = random(smahanderQuotes);
 
 } else if (isMamma) {
     quote = random(mammaQuotes);
