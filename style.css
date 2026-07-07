@@ -77,9 +77,9 @@ body.hjarta::before {
     animation: slowBreath 22s ease-in-out infinite;
 }
 /* =========================
-   FRÅN FREYJA
+   FRÅN SMÅ HÄNDER
 ========================= */
-body.freyja {
+body.smahander {
     background: linear-gradient(
         180deg,
         #ffffff 0%,
@@ -87,7 +87,7 @@ body.freyja {
     );
 }
 
-body.freyja::before {
+body.smahander::before {
     background:
         radial-gradient(circle at 30% 30%, rgba(173, 196, 173, 0.14), transparent 40%),
         radial-gradient(circle at 70% 60%, rgba(195, 214, 195, 0.10), transparent 45%);
@@ -181,26 +181,26 @@ h1 {
     transform: translateY(0);
 }
 /* =========================
-   FRÅN FREYJA
+   FRÅN SMÅ HÄNDER
 ========================= */
-body.freyja h1 {
+body.smahander h1 {
     color: #b8860b;   /* varm honungsguld */
 }
 
-body.freyja .subtitle {
+body.smahander .subtitle {
     color: #7f927f;   /* salviagrön */
 }
 
-body.freyja .quote {
+body.smahander .quote {
     color: #495b4b;   /* samma mörkgröna som Med dig */
 }
-body.freyja #luckButton {
+body.smahander #luckButton {
     background: rgba(255,255,255,0.9);
     border: 1px solid rgba(184,134,11,0.20);
     color: #b8860b;
 }
 
-body.freyja #luckButton:hover {
+body.smahander #luckButton:hover {
     box-shadow: 0 6px 16px rgba(184,134,11,0.15);
 }
 
