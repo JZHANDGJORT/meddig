@@ -688,6 +688,21 @@ window.addEventListener("DOMContentLoaded", () => {
     updateQuote(getDailyQuote());
 }
 
+                else if (isLanda) {
+
+    document.body.classList.add("landa");
+
+    title.textContent = "LANDA";
+
+    subtitle.textContent = "Här och nu";
+
+    luckBtn.textContent = "♡";
+
+    lullBtn.style.display = "none";
+
+    updateQuote(random(landaQuotes));
+}
+
     else {
         subtitle.textContent = "En vänlig påminnelse";
 
