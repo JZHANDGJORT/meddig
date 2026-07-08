@@ -618,6 +618,10 @@ function newQuote() {
     } else if (isSmahander) {
         updateQuote(random(smahanderQuotes));
 
+ } else if (isLanda) {
+    updateQuote(random(landaQuotes));
+}
+        
 } else if (isMamma) {
     updateQuote(random(mammaQuotes));
         
