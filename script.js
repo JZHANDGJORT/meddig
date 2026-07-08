@@ -514,6 +514,12 @@ const mammaQuotes = [
     "Det är okej att också ta hand om mamman.",
     "Ibland är det viktigaste att ni får vara nära varandra."
 ];
+// ===============================
+// LANDA
+// ===============================
+const landaQuotes = [
+    // citat
+];
 
 // ===============================
 // ⏰ DYGN
