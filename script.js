@@ -620,7 +620,6 @@ function newQuote() {
 
  } else if (isLanda) {
     updateQuote(random(landaQuotes));
-}
         
 } else if (isMamma) {
     updateQuote(random(mammaQuotes));
