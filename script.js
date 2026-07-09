@@ -636,7 +636,7 @@ function getDailyQuote() {
     quote = random(smahanderQuotes);
 
 } else if (isLanda) {
-    quote = random(landaQuotes);
+    quote = getLandaQuote();
 
 } else if (isMamma) {
     quote = random(mammaQuotes);
