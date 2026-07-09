@@ -541,7 +541,18 @@ const landaKindnessQuotes = [
     "Det räcker att du fortsätter andas.",
     "Du får möta dig själv med lite mer vänlighet."
 ];
-
+const landaHopeQuotes = [
+    "Den här känslan kommer inte alltid vara så stark.",
+    "Du har tagit dig hit.",
+    "Det finns inget krav på att må bra direkt.",
+    "Små steg räknas.",
+    "Du behöver inte se hela vägen.",
+    "Du får börja om hur många gånger du behöver.",
+    "Det finns fortfarande lugna stunder kvar.",
+    "Du behöver inte lösa allt idag.",
+    "Det är okej att ta en minut i taget.",
+    "Det finns mer än den här stunden."
+];
 
 // ===============================
 // ⏰ DYGN
