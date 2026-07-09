@@ -599,7 +599,20 @@ function getLullQuote() {
 
     return random(calmDayQuotes);
 }
+// ===============================
+//  LANDA
+// ===============================
+function getLandaQuote() {
 
+    const groups = [
+        landaGroundingQuotes,
+        landaKindnessQuotes,
+        landaHopeQuotes,
+        landaSafetyQuotes
+    ];
+
+    return random(random(groups));
+}
 // ===============================
 // 📅 DAGLIGT SYSTEM
 // ===============================
