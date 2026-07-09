@@ -517,9 +517,19 @@ const mammaQuotes = [
 // ===============================
 // LANDA
 // ===============================
-const landaQuotes = [
-    // citat
+    const landaGroundingQuotes = [
+    "Du är här.",
+    "Den här stunden är ny.",
+    "Lägg märke till golvet under dina fötter.",
+    "Du behöver inte vara någon annanstans just nu.",
+    "Ta in rummet omkring dig.",
+    "Den här stunden behöver inte lösas.",
+    "Du får bara vara här en liten stund.",
+    "Det räcker att du är här just nu.",
+    "Låt blicken vila på något stilla.",
+    "Du behöver inte tänka färdigt alla tankar."
 ];
+
 
 // ===============================
 // ⏰ DYGN
